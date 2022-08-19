@@ -1,0 +1,19 @@
+{
+  "name": "tsrv-644",
+  "version": "1.0.0",
+  "description": "test of PF4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pf4"
+  ],
+  "author": "@ii",
+  "license": "ISC",
+  "dependencies": {
+    "@patternfly/patternfly": "^4.206.3",
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0"
+  }
+}
