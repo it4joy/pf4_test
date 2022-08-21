@@ -7,37 +7,33 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/patternfly.min.css">
     <link rel="stylesheet" href="/css/patternfly-addons.css">
+    <link rel="stylesheet" href="/css/custom.css">
     <script type="text/javascript" src="/js/jquery.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js" charset="utf-8"></script>
   </head>
   <body class="container">
     <div class="pf-l-bullseye">
         <div class="pf-l-bullseye__item">
-            <div
-              class="pf-c-modal-box pf-m-md"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-md-title"
-              aria-describedby="modal-md-description"
-            >
-              <button
-                class="pf-c-button pf-m-plain"
-                type="button"
-                aria-label="Close dialog"
-              >
-                <i class="fas fa-times" aria-hidden="true"></i>
-              </button>
-              <header class="pf-c-modal-box__header">
-                <h1 class="pf-c-modal-box__title" id="modal-md-title">Modal title</h1>
-              </header>
-              <div class="pf-c-modal-box__body" id="modal-md-description">
-                Static text describing modal purpose. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </div>
-              <footer class="pf-c-modal-box__footer">Modal footer</footer>
+            <div class="modal fade pf-c-modal-box pf-m-md" id="test-modal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="modal-md-title" aria-describedby="modal-md-description">
+                <button class="pf-c-button pf-m-plain" type="button" aria-label="Close dialog" data-bs-dismiss="modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <header class="pf-c-modal-box__header">
+                            <h1 class="pf-c-modal-box__title" id="modal-md-title">Modal title</h1>
+                        </header>
+                        <div class="modal-body pf-c-modal-box__body" id="modal-md-description">
+                            Static text describing modal purpose. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <footer class="pf-c-modal-box__footer">Modal footer</footer>
+                    </div>
+                </div>
             </div>
+            <button class="pf-c-button pf-m-primary" type="button" data-bs-toggle="modal" data-bs-target="#test-modal">Open modal</button>
         </div>
     </div>
   </body>
